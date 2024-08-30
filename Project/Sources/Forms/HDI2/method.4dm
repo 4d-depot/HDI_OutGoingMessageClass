@@ -20,9 +20,9 @@ Case of
 		
 		Form:C1466.entityURL:=buildEntityURL
 		
-		Form:C1466.getEntitySet:="/rest/Products?$filter=\"price>=140\"&$method=entityset"
+		Form:C1466.getEntitySet:="/rest/Products?$filter=\"price<=140\"&$method=entityset"
 		
-		
+		Form:C1466.orderedProducts:=ds:C1482.Products.all().orderBy("price")
 		
 	: (Form event code:C388=On Close Box:K2:21)
 		If (Is Windows:C1573 && Get application info:C1599().SDIMode)

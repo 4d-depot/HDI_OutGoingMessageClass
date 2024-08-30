@@ -39,7 +39,6 @@ exposed onHTTPGet Function getUserManual($product : cs:C1710.ProductsEntity) : 4
 	
 	return $response
 	
-	
 exposed onHTTPGet Function buildShoppingList($products : cs:C1710.ProductsSelection) : 4D:C1709.OutgoingMessage
 	
 	var $p : cs:C1710.ProductsEntity

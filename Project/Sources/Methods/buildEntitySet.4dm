@@ -1,3 +1,4 @@
+//%attributes = {}
 
 var $headers : Object:={Cookie: ""}
 var $requestObj; $request : Object

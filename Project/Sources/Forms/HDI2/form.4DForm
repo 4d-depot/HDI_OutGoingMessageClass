@@ -5,7 +5,7 @@
 	"windowMinHeight": 540,
 	"windowMaxHeight": 32000,
 	"width": 1000,
-	"height": 800,
+	"height": 900,
 	"menuBar": "Menu Bar #1",
 	"markerHeader": 15,
 	"markerBody": 200,
@@ -29,7 +29,7 @@
 					"top": 20,
 					"left": 20,
 					"width": 960,
-					"height": 760,
+					"height": 860,
 					"sizingX": "grow",
 					"sizingY": "grow",
 					"dataSource": "objTabs",
@@ -42,16 +42,13 @@
 			}
 		},
 		{
-			"objects": {}
-		},
-		{
 			"objects": {
-				"information": {
+				"information3": {
 					"type": "input",
 					"top": 70,
 					"left": 50,
-					"width": 800,
-					"height": 100,
+					"width": 900,
+					"height": 400,
 					"sizingX": "grow",
 					"sizingY": "grow",
 					"dataSource": "Infos[0].Description",
@@ -67,12 +64,38 @@
 						"onDataChange"
 					],
 					"class": "description"
+				}
+			}
+		},
+		{
+			"objects": {
+				"information": {
+					"type": "input",
+					"top": 70,
+					"left": 50,
+					"width": 900,
+					"height": 180,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Infos[1].Description",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"class": "description"
 				},
 				"Products": {
 					"type": "listbox",
-					"left": 40,
-					"top": 200,
-					"width": 255,
+					"left": 50,
+					"top": 300,
+					"width": 135,
 					"height": 181,
 					"events": [
 						"onSelectionChange"
@@ -89,18 +112,6 @@
 					"columns": [
 						{
 							"header": {
-								"text": "Manufacturer",
-								"name": "Header1"
-							},
-							"name": "Column1",
-							"footer": {
-								"name": "Footer1"
-							},
-							"dataSource": "This:C1470.manufacturer",
-							"width": 120
-						},
-						{
-							"header": {
 								"name": "Header2",
 								"text": "Name"
 							},
@@ -113,48 +124,10 @@
 						}
 					]
 				},
-				"Input": {
-					"type": "input",
-					"left": 150,
-					"top": 470,
-					"width": 150,
-					"height": 20,
-					"dataSource": "Form:C1466.product.name",
-					"enterable": false,
-					"focusable": false,
-					"fill": "transparent",
-					"borderStyle": "none"
-				},
-				"Input1": {
-					"type": "input",
-					"left": 150,
-					"top": 510,
-					"width": 150,
-					"height": 20,
-					"dataSource": "Form:C1466.product.price",
-					"enterable": false,
-					"focusable": false,
-					"fill": "transparent",
-					"borderStyle": "none",
-					"textAlign": "left",
-					"dataSourceTypeHint": "number"
-				},
-				"Input2": {
-					"type": "input",
-					"left": 150,
-					"top": 430,
-					"width": 150,
-					"height": 20,
-					"dataSource": "Form:C1466.product.manufacturer",
-					"enterable": false,
-					"focusable": false,
-					"fill": "transparent",
-					"borderStyle": "none"
-				},
 				"Input4": {
 					"type": "input",
 					"left": 150,
-					"top": 700,
+					"top": 680,
 					"width": 680,
 					"height": 20,
 					"dataSource": "Form:C1466.url",
@@ -170,7 +143,7 @@
 				"Text": {
 					"type": "text",
 					"text": "200 x 200",
-					"top": 600,
+					"top": 540,
 					"left": 180,
 					"width": 180,
 					"height": 20
@@ -178,7 +151,7 @@
 				"Text1": {
 					"type": "text",
 					"text": "400 x 400",
-					"top": 630,
+					"top": 570,
 					"left": 180,
 					"width": 180,
 					"height": 20
@@ -186,7 +159,7 @@
 				"Radio Button": {
 					"type": "radio",
 					"text": "",
-					"top": 600,
+					"top": 540,
 					"left": 150,
 					"width": 50,
 					"height": 20,
@@ -200,7 +173,7 @@
 				"Radio Button1": {
 					"type": "radio",
 					"text": "",
-					"top": 630,
+					"top": 570,
 					"left": 150,
 					"width": 50,
 					"height": 20,
@@ -211,50 +184,12 @@
 					"dataSource": "Form:C1466.large",
 					"method": "ObjectMethods/Radio Button1.4dm"
 				},
-				"Text2": {
-					"type": "text",
-					"text": "Product details",
-					"top": 390,
-					"left": 40,
-					"width": 180,
-					"height": 20,
-					"fontSize": 18,
-					"fontWeight": "bold",
-					"stroke": "#6495ed"
-				},
-				"Text3": {
-					"type": "text",
-					"text": "Manufacturer:",
-					"top": 430,
-					"left": -10,
-					"width": 150,
-					"height": 20,
-					"textAlign": "right"
-				},
-				"Text4": {
-					"type": "text",
-					"text": "Name:",
-					"top": 470,
-					"left": -10,
-					"width": 150,
-					"height": 20,
-					"textAlign": "right"
-				},
-				"Text5": {
-					"type": "text",
-					"text": "Price:",
-					"top": 510,
-					"left": -10,
-					"width": 150,
-					"height": 20,
-					"textAlign": "right"
-				},
 				"Text7": {
 					"type": "text",
-					"text": "Download picture",
-					"top": 560,
+					"text": "Download product picture",
+					"top": 500,
 					"left": 40,
-					"width": 180,
+					"width": 250,
 					"height": 20,
 					"fontSize": 18,
 					"fontWeight": "bold",
@@ -263,7 +198,7 @@
 				"Text8": {
 					"type": "text",
 					"text": "Size (pixels):",
-					"top": 600,
+					"top": 540,
 					"left": -60,
 					"width": 200,
 					"height": 20,
@@ -273,7 +208,7 @@
 				"Button": {
 					"type": "button",
 					"text": "Download",
-					"top": 740,
+					"top": 720,
 					"left": 40,
 					"width": 100,
 					"height": 20,
@@ -286,7 +221,7 @@
 				"Text9": {
 					"type": "text",
 					"text": "Picture URL:",
-					"top": 700,
+					"top": 680,
 					"left": 40,
 					"width": 100,
 					"height": 20,
@@ -298,15 +233,37 @@
 				"Input10": {
 					"type": "input",
 					"left": 310,
-					"top": 200,
+					"top": 400,
 					"width": 650,
-					"height": 340,
+					"height": 300,
 					"enterable": false,
 					"focusable": false,
 					"fill": "transparent",
 					"borderStyle": "dotted",
 					"dataSource": "LinesCode[0].Description",
 					"styledText": true
+				},
+				"Text10": {
+					"type": "text",
+					"text": "Products list",
+					"top": 270,
+					"left": 50,
+					"width": 180,
+					"height": 20,
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"stroke": "#6495ed"
+				},
+				"Text11": {
+					"type": "text",
+					"text": "Products dataclass",
+					"top": 295,
+					"left": 325,
+					"width": 250,
+					"height": 20,
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"stroke": "#6495ed"
 				}
 			}
 		},
@@ -316,11 +273,11 @@
 					"type": "input",
 					"top": 70,
 					"left": 50,
-					"width": 800,
-					"height": 100,
+					"width": 900,
+					"height": 180,
 					"sizingX": "grow",
 					"sizingY": "grow",
-					"dataSource": "Infos[0].Description",
+					"dataSource": "Infos[2].Description",
 					"focusable": false,
 					"fill": "transparent",
 					"borderStyle": "none",
@@ -336,9 +293,9 @@
 				},
 				"Products2": {
 					"type": "listbox",
-					"left": 60,
-					"top": 200,
-					"width": 315,
+					"left": 50,
+					"top": 300,
+					"width": 245,
 					"height": 181,
 					"events": [
 						"onSelectionChange"
@@ -355,15 +312,16 @@
 					"columns": [
 						{
 							"header": {
-								"text": "Manufacturer",
-								"name": "Header3"
+								"name": "Header5",
+								"text": "ID"
 							},
-							"name": "Column3",
+							"name": "Column5",
+							"width": 80,
 							"footer": {
-								"name": "Footer3"
+								"name": "Footer5"
 							},
-							"dataSource": "This:C1470.manufacturer",
-							"width": 150
+							"dataSource": "This:C1470.ID",
+							"textAlign": "center"
 						},
 						{
 							"header": {
@@ -379,49 +337,11 @@
 						}
 					]
 				},
-				"Input3": {
-					"type": "input",
-					"left": 170,
-					"top": 490,
-					"width": 250,
-					"height": 20,
-					"dataSource": "Form:C1466.product2.name",
-					"enterable": false,
-					"focusable": false,
-					"fill": "transparent",
-					"borderStyle": "none"
-				},
-				"Input5": {
-					"type": "input",
-					"left": 170,
-					"top": 530,
-					"width": 250,
-					"height": 20,
-					"dataSource": "Form:C1466.product2.price",
-					"enterable": false,
-					"focusable": false,
-					"fill": "transparent",
-					"borderStyle": "none",
-					"textAlign": "left",
-					"dataSourceTypeHint": "number"
-				},
-				"Input6": {
-					"type": "input",
-					"left": 170,
-					"top": 450,
-					"width": 250,
-					"height": 20,
-					"dataSource": "Form:C1466.product2.manufacturer",
-					"enterable": false,
-					"focusable": false,
-					"fill": "transparent",
-					"borderStyle": "none"
-				},
 				"Input7": {
 					"type": "input",
 					"left": 60,
-					"top": 600,
-					"width": 800,
+					"top": 630,
+					"width": 900,
 					"height": 20,
 					"dataSource": "Form:C1466.entityURL",
 					"events": [
@@ -433,48 +353,10 @@
 					"borderStyle": "none",
 					"fontSize": 16
 				},
-				"Text11": {
-					"type": "text",
-					"text": "Product details",
-					"top": 410,
-					"left": 60,
-					"width": 180,
-					"height": 20,
-					"fontSize": 18,
-					"fontWeight": "bold",
-					"stroke": "#6495ed"
-				},
-				"Text12": {
-					"type": "text",
-					"text": "Manufacturer:",
-					"top": 450,
-					"left": 10,
-					"width": 150,
-					"height": 20,
-					"textAlign": "right"
-				},
-				"Text13": {
-					"type": "text",
-					"text": "Name:",
-					"top": 490,
-					"left": 10,
-					"width": 150,
-					"height": 20,
-					"textAlign": "right"
-				},
-				"Text14": {
-					"type": "text",
-					"text": "Price:",
-					"top": 530,
-					"left": 10,
-					"width": 150,
-					"height": 20,
-					"textAlign": "right"
-				},
 				"Button1": {
 					"type": "button",
 					"text": "Download",
-					"top": 640,
+					"top": 690,
 					"left": 60,
 					"width": 100,
 					"height": 20,
@@ -487,7 +369,7 @@
 				"Text17": {
 					"type": "text",
 					"text": "User manual URL",
-					"top": 580,
+					"top": 610,
 					"left": 60,
 					"width": 150,
 					"height": 20,
@@ -498,8 +380,8 @@
 				},
 				"Input11": {
 					"type": "input",
-					"left": 380,
-					"top": 200,
+					"left": 341,
+					"top": 410,
 					"width": 500,
 					"height": 300,
 					"enterable": false,
@@ -508,6 +390,28 @@
 					"borderStyle": "dotted",
 					"dataSource": "LinesCode[1].Description",
 					"styledText": true
+				},
+				"Text2": {
+					"type": "text",
+					"text": "Products list",
+					"top": 270,
+					"left": 50,
+					"width": 180,
+					"height": 20,
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"stroke": "#6495ed"
+				},
+				"Text6": {
+					"type": "text",
+					"text": "Products dataclass",
+					"top": 295,
+					"left": 325,
+					"width": 250,
+					"height": 20,
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"stroke": "#6495ed"
 				}
 			}
 		},
@@ -517,11 +421,11 @@
 					"type": "input",
 					"top": 70,
 					"left": 50,
-					"width": 800,
-					"height": 100,
+					"width": 900,
+					"height": 150,
 					"sizingX": "grow",
 					"sizingY": "grow",
-					"dataSource": "Infos[0].Description",
+					"dataSource": "Infos[3].Description",
 					"focusable": false,
 					"fill": "transparent",
 					"borderStyle": "none",
@@ -538,8 +442,8 @@
 				"Button2": {
 					"type": "button",
 					"text": "Download shopping list",
-					"top": 734,
-					"left": 79,
+					"top": 845,
+					"left": 43,
 					"width": 200,
 					"height": 20,
 					"events": [
@@ -551,8 +455,8 @@
 				"Text18": {
 					"type": "text",
 					"text": "Shopping list URL:",
-					"top": 670,
-					"left": 30,
+					"top": 805,
+					"left": 40,
 					"width": 150,
 					"height": 20,
 					"textAlign": "right",
@@ -562,33 +466,20 @@
 				},
 				"RunRESTRequest": {
 					"type": "input",
-					"left": 40,
-					"top": 130,
+					"left": 50,
+					"top": 297,
 					"width": 460,
 					"height": 30,
-					"enterable": false,
+					"enterable": true,
 					"focusable": false,
 					"dataSource": "Form:C1466.getEntitySet"
-				},
-				"RunRESTRequestButton": {
-					"type": "button",
-					"text": "Build entity set",
-					"top": 170,
-					"left": 40,
-					"width": 140,
-					"height": 20,
-					"events": [
-						"onClick"
-					],
-					"focusable": false,
-					"method": "ObjectMethods/RunRESTRequestButton.4dm"
 				},
 				"Input8": {
 					"type": "input",
 					"left": 40,
-					"top": 260,
-					"width": 380,
-					"height": 400,
+					"top": 587,
+					"width": 373,
+					"height": 180,
 					"enterable": false,
 					"focusable": false,
 					"dataSource": "Form:C1466.response",
@@ -596,8 +487,8 @@
 				},
 				"EntitySet": {
 					"type": "input",
-					"left": 150,
-					"top": 210,
+					"left": 617,
+					"top": 309,
 					"width": 300,
 					"height": 20,
 					"enterable": false,
@@ -608,18 +499,18 @@
 				"EntitySetLabel": {
 					"type": "text",
 					"text": "Entity set",
-					"top": 217,
-					"left": 50,
+					"top": 288,
+					"left": 617,
 					"width": 70,
 					"height": 20,
 					"fontWeight": "bold"
 				},
 				"Input9": {
 					"type": "input",
-					"left": 50,
-					"top": 694,
-					"width": 800,
-					"height": 20,
+					"left": 197,
+					"top": 805,
+					"width": 880,
+					"height": 40,
 					"dataSource": "Form:C1466.entitySelectionURL",
 					"events": [
 						"onClick"
@@ -628,20 +519,112 @@
 					"focusable": false,
 					"fill": "transparent",
 					"borderStyle": "none",
-					"fontSize": 16
+					"fontSize": 14
 				},
 				"Input12": {
 					"type": "input",
 					"left": 450,
-					"top": 260,
+					"top": 405,
 					"width": 500,
-					"height": 300,
+					"height": 440,
 					"enterable": false,
 					"focusable": false,
 					"fill": "transparent",
 					"borderStyle": "dotted",
 					"dataSource": "LinesCode[2].Description",
 					"styledText": true
+				},
+				"Button3": {
+					"type": "button",
+					"text": "Run",
+					"top": 307,
+					"left": 521,
+					"width": 82,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button3.4dm",
+					"focusable": false
+				},
+				"Products1": {
+					"type": "listbox",
+					"left": 43,
+					"top": 365,
+					"width": 265,
+					"height": 181,
+					"events": [
+						"onSelectionChange"
+					],
+					"listboxType": "collection",
+					"selectionMode": "none",
+					"rowHeight": "20px",
+					"headerHeight": "21px",
+					"dataSource": "Form:C1466.orderedProducts",
+					"focusable": false,
+					"scrollbarHorizontal": "hidden",
+					"currentItemSource": "",
+					"method": "ObjectMethods/Products1.4dm",
+					"columns": [
+						{
+							"header": {
+								"name": "Header3",
+								"text": "Name"
+							},
+							"name": "Column3",
+							"dataSource": "This:C1470.name",
+							"width": 150,
+							"footer": {
+								"name": "Footer3"
+							}
+						},
+						{
+							"header": {
+								"name": "Header1",
+								"text": "Header1"
+							},
+							"name": "Column1",
+							"dataSource": "This:C1470.price",
+							"dataSourceTypeHint": "number",
+							"width": 100,
+							"footer": {
+								"name": "Footer1"
+							}
+						}
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"text": "Products list",
+					"top": 331,
+					"left": 43,
+					"width": 180,
+					"height": 20,
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"stroke": "#6495ed"
+				},
+				"Text4": {
+					"type": "text",
+					"text": "Response (entity selection)",
+					"top": 552,
+					"left": 40,
+					"width": 250,
+					"height": 20,
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"stroke": "#6495ed"
+				},
+				"Text5": {
+					"type": "text",
+					"text": "Shopping singleton",
+					"top": 375,
+					"left": 450,
+					"width": 250,
+					"height": 20,
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"stroke": "#6495ed"
 				}
 			}
 		}
@@ -657,5 +640,5 @@
 			"View 1": {}
 		}
 	},
-	"geometryStamp": 1897
+	"geometryStamp": 2284
 }
