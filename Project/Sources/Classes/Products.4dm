@@ -45,7 +45,7 @@ exposed onHTTPGet Function buildShoppingList($products : cs:C1710.ProductsSelect
 	var $p : cs:C1710.ProductsEntity
 	var $content : Text
 	var $file : 4D:C1709.File
-	var $result : Boolean
+	
 	var $blob : Blob
 	var $response : 4D:C1709.OutgoingMessage:=4D:C1709.OutgoingMessage.new()
 	
