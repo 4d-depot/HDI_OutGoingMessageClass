@@ -5,7 +5,7 @@ Case of
 		
 		
 		
-		updatePhotoURL
+		Form:C1466.entityURL:=buildEntityURL
 		
 		
 		

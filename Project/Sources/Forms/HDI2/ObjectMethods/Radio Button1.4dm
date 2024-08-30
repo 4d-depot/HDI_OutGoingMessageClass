@@ -1,3 +1,3 @@
 
 
-updateURL
+updatePhotoURL
