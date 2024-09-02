@@ -15,8 +15,8 @@
 				"id": "pictureSize",
 				"type": "scalar",
 				"namespace": "",
-				"dataType": "string",
-				"initialValue": "small"
+				"dataType": "number",
+				"initialValue": 200
 			},
 			{
 				"id": "photoURL",
@@ -485,7 +485,8 @@
 							"name": "result",
 							"type": "Text",
 							"datasource": "photoURL"
-						}
+						},
+						"disabled": true
 					},
 					{
 						"type": "navigation",
@@ -496,7 +497,42 @@
 						"externalLink": true,
 						"parent": "new-tab",
 						"isHardCoded": false,
-						"target": "photoURL"
+						"target": "photoURL",
+						"disabled": true
+					},
+					{
+						"type": "method",
+						"dataclass": "Products",
+						"events": [
+							"onclick"
+						],
+						"id": "nwK53xmkqn73nRSMJYmWZG",
+						"method": "ds.Products.getThumbnail",
+						"params": [
+							{
+								"name": "name",
+								"type": "Text",
+								"datasource": "$This.name",
+								"id": "fbvLhKVJxmnJXjB3Q6RVNm"
+							},
+							{
+								"name": "width",
+								"type": "Integer",
+								"datasource": "pictureSize",
+								"id": "fa6T4Sn6aJREizj3h67FJV"
+							},
+							{
+								"name": "height",
+								"type": "Integer",
+								"datasource": "pictureSize",
+								"id": "rNpMzXy4b25LPB7x4KUBDx"
+							}
+						],
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "4D.OutgoingMessage"
+						}
 					}
 				],
 				"iconPosition": "hidden",
@@ -599,12 +635,12 @@
 				"options": [
 					{
 						"label": "200 x 200",
-						"value": "small",
+						"value": "200",
 						"id": "dkTsVgCsS3bzGMe3Wc3A3V"
 					},
 					{
 						"label": "400 x 400",
-						"value": "large",
+						"value": "400",
 						"id": "55cXXrmzEradZBSxUsMbkr"
 					}
 				],

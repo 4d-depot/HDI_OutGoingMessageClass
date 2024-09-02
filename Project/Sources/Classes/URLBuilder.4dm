@@ -31,10 +31,4 @@ exposed shared Function buildUserManualURL($product : cs:C1710.ProductsEntity) :
 	
 	return $url
 	
-exposed shared Function buildShoppingListURL($product : cs:C1710.ProductsEntity) : Text
 	
-	var $url : Text
-	
-	$url:=getUserManualURL($product)
-	
-	return $url

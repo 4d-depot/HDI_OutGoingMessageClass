@@ -1,3 +1,3 @@
 
 
-OPEN URL:C673(Form:C1466.entityURL)
+OPEN URL:C673(Form:C1466.userManualURL)

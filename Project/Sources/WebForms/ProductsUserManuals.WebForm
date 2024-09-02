@@ -451,18 +451,41 @@
 				"events": [
 					{
 						"type": "method",
+						"dataclass": "Products",
+						"events": [
+							"onclick"
+						],
+						"id": "itpD6Ccr1AvYW3oMbJUr5P",
+						"method": "ds.Products.getUserManual",
+						"params": [
+							{
+								"name": "product",
+								"type": "cs.ProductsEntity",
+								"datasource": "$This",
+								"id": "1LQT93GofYAPrHbEgP395z"
+							}
+						],
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "4D.OutgoingMessage"
+						},
+						"disabled": false
+					},
+					{
+						"type": "method",
 						"dataclass": "URLBuilder",
 						"events": [
 							"onclick"
 						],
-						"id": "pCjSzDjTq435EGq9WHY95b",
+						"id": "5Gji8JjHia1MaE5abAcJJR",
 						"method": "URLBuilder.buildUserManualURL",
 						"params": [
 							{
 								"name": "product",
 								"type": "cs.ProductsEntity",
 								"datasource": "$This",
-								"id": "qJsUzwqwUcaUeiyiMZKued"
+								"id": "xyD8CUqRbbLqywTrUj9uwm"
 							}
 						],
 						"datasource": "",
@@ -471,18 +494,20 @@
 							"name": "result",
 							"type": "Text",
 							"datasource": "userManualURL"
-						}
+						},
+						"disabled": true
 					},
 					{
 						"type": "navigation",
-						"id": "ixbmgezShxg4zPATR4mcEE",
+						"id": "47RpFa9k9B1D2miJaY6DTH",
 						"events": [
 							"onclick"
 						],
 						"externalLink": true,
 						"parent": "new-tab",
 						"isHardCoded": false,
-						"target": "userManualURL"
+						"target": "userManualURL",
+						"disabled": true
 					}
 				],
 				"iconPosition": "hidden",

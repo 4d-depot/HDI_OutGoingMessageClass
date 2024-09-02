@@ -131,7 +131,7 @@
 					"top": 750,
 					"width": 680,
 					"height": 20,
-					"dataSource": "Form:C1466.url",
+					"dataSource": "Form:C1466.photoURL",
 					"events": [
 						"onClick"
 					],
@@ -565,7 +565,6 @@
 					"focusable": false,
 					"scrollbarHorizontal": "hidden",
 					"currentItemSource": "",
-					"method": "ObjectMethods/Products1.4dm",
 					"columns": [
 						{
 							"header": {
