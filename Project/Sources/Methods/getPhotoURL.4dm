@@ -1,7 +1,7 @@
 //%attributes = {}
 
 
-#DECLARE($width : Integer; $height : Integer) : Text
+#DECLARE($name : Text; $width : Integer; $height : Integer) : Text
 
 var $url : Text
 
@@ -12,7 +12,7 @@ $url:=$url+"'["
 
 $url:=$url+"\""
 
-$url:=$url+Form:C1466.product.name+"\""
+$url:=$url+$name+"\""
 
 $url:=$url+","+String:C10($width)+","+String:C10($height)
 

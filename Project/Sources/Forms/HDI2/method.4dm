@@ -12,7 +12,7 @@ Case of
 		
 		Form:C1466.product:=Form:C1466.products.first()
 		
-		updatePhotoURL
+		Form:C1466.product:=cs:C1710.URLBuilder.me.buildThumbnailURL(Form:C1466.product; "small")
 		
 		LISTBOX SELECT ROW:C912(*; "Products2"; 1; lk replace selection:K53:1)
 		

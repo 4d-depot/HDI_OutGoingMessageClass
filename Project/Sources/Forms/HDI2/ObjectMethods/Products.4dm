@@ -1,12 +1,4 @@
 
 
-Case of 
-	: (Form event code:C388=On Selection Change:K2:29)
-		
-		
-		
-		updatePhotoURL
-		
-		
-		
-End case 
+
+Form:C1466.url:=cs:C1710.URLBuilder.me.buildThumbnailURL(Form:C1466.product; Form:C1466.size)

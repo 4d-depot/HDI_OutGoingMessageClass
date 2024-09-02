@@ -46,7 +46,7 @@
 			"objects": {
 				"information3": {
 					"type": "input",
-					"top": 70,
+					"top": 130,
 					"left": 50,
 					"width": 900,
 					"height": 400,
@@ -72,7 +72,7 @@
 			"objects": {
 				"information": {
 					"type": "input",
-					"top": 70,
+					"top": 100,
 					"left": 50,
 					"width": 900,
 					"height": 180,
@@ -95,7 +95,7 @@
 				"Products": {
 					"type": "listbox",
 					"left": 50,
-					"top": 300,
+					"top": 370,
 					"width": 135,
 					"height": 181,
 					"events": [
@@ -128,7 +128,7 @@
 				"Input4": {
 					"type": "input",
 					"left": 150,
-					"top": 680,
+					"top": 750,
 					"width": 680,
 					"height": 20,
 					"dataSource": "Form:C1466.url",
@@ -144,7 +144,7 @@
 				"Text": {
 					"type": "text",
 					"text": "200 x 200",
-					"top": 540,
+					"top": 610,
 					"left": 180,
 					"width": 180,
 					"height": 20
@@ -152,7 +152,7 @@
 				"Text1": {
 					"type": "text",
 					"text": "400 x 400",
-					"top": 570,
+					"top": 640,
 					"left": 180,
 					"width": 180,
 					"height": 20
@@ -160,7 +160,7 @@
 				"Radio Button": {
 					"type": "radio",
 					"text": "",
-					"top": 540,
+					"top": 610,
 					"left": 150,
 					"width": 50,
 					"height": 20,
@@ -174,7 +174,7 @@
 				"Radio Button1": {
 					"type": "radio",
 					"text": "",
-					"top": 570,
+					"top": 640,
 					"left": 150,
 					"width": 50,
 					"height": 20,
@@ -188,7 +188,7 @@
 				"Text7": {
 					"type": "text",
 					"text": "Download product picture",
-					"top": 500,
+					"top": 570,
 					"left": 40,
 					"width": 250,
 					"height": 20,
@@ -199,7 +199,7 @@
 				"Text8": {
 					"type": "text",
 					"text": "Size (pixels):",
-					"top": 540,
+					"top": 610,
 					"left": -60,
 					"width": 200,
 					"height": 20,
@@ -209,7 +209,7 @@
 				"Button": {
 					"type": "button",
 					"text": "Download",
-					"top": 720,
+					"top": 790,
 					"left": 40,
 					"width": 100,
 					"height": 20,
@@ -222,7 +222,7 @@
 				"Text9": {
 					"type": "text",
 					"text": "Picture URL:",
-					"top": 680,
+					"top": 750,
 					"left": 40,
 					"width": 100,
 					"height": 20,
@@ -234,7 +234,7 @@
 				"Input10": {
 					"type": "input",
 					"left": 310,
-					"top": 300,
+					"top": 370,
 					"width": 650,
 					"height": 300,
 					"enterable": false,
@@ -247,7 +247,7 @@
 				"Text10": {
 					"type": "text",
 					"text": "Products list",
-					"top": 270,
+					"top": 340,
 					"left": 50,
 					"width": 180,
 					"height": 20,
@@ -258,7 +258,7 @@
 				"Text11": {
 					"type": "text",
 					"text": "Products dataclass",
-					"top": 270,
+					"top": 340,
 					"left": 310,
 					"width": 250,
 					"height": 20,
@@ -272,7 +272,7 @@
 			"objects": {
 				"information1": {
 					"type": "input",
-					"top": 70,
+					"top": 100,
 					"left": 50,
 					"width": 900,
 					"height": 180,
@@ -295,7 +295,7 @@
 				"Products2": {
 					"type": "listbox",
 					"left": 50,
-					"top": 300,
+					"top": 370,
 					"width": 245,
 					"height": 181,
 					"events": [
@@ -341,10 +341,10 @@
 				"Input7": {
 					"type": "input",
 					"left": 50,
-					"top": 640,
+					"top": 710,
 					"width": 900,
 					"height": 20,
-					"dataSource": "Form:C1466.entityURL",
+					"dataSource": "Form:C1466.userManualURL",
 					"events": [
 						"onClick"
 					],
@@ -357,7 +357,7 @@
 				"Button1": {
 					"type": "button",
 					"text": "Download",
-					"top": 690,
+					"top": 780,
 					"left": 50,
 					"width": 100,
 					"height": 20,
@@ -370,7 +370,7 @@
 				"Text17": {
 					"type": "text",
 					"text": "User manual URL",
-					"top": 610,
+					"top": 680,
 					"left": 50,
 					"width": 150,
 					"height": 20,
@@ -382,7 +382,7 @@
 				"Input11": {
 					"type": "input",
 					"left": 320,
-					"top": 300,
+					"top": 370,
 					"width": 500,
 					"height": 300,
 					"enterable": false,
@@ -395,7 +395,7 @@
 				"Text2": {
 					"type": "text",
 					"text": "Products list",
-					"top": 270,
+					"top": 340,
 					"left": 50,
 					"width": 180,
 					"height": 20,
@@ -406,7 +406,7 @@
 				"Text6": {
 					"type": "text",
 					"text": "Products dataclass",
-					"top": 270,
+					"top": 340,
 					"left": 320,
 					"width": 250,
 					"height": 20,
@@ -420,7 +420,7 @@
 			"objects": {
 				"information2": {
 					"type": "input",
-					"top": 70,
+					"top": 100,
 					"left": 50,
 					"width": 900,
 					"height": 110,
@@ -468,7 +468,7 @@
 				"RunRESTRequest": {
 					"type": "input",
 					"left": 50,
-					"top": 220,
+					"top": 250,
 					"width": 460,
 					"height": 30,
 					"enterable": true,
@@ -478,7 +478,7 @@
 				"Input8": {
 					"type": "input",
 					"left": 50,
-					"top": 520,
+					"top": 560,
 					"width": 373,
 					"height": 180,
 					"enterable": false,
@@ -489,7 +489,7 @@
 				"EntitySet": {
 					"type": "input",
 					"left": 610,
-					"top": 240,
+					"top": 260,
 					"width": 300,
 					"height": 20,
 					"enterable": false,
@@ -500,7 +500,7 @@
 				"EntitySetLabel": {
 					"type": "text",
 					"text": "Entity set",
-					"top": 220,
+					"top": 240,
 					"left": 610,
 					"width": 70,
 					"height": 20,
@@ -525,7 +525,7 @@
 				"Input12": {
 					"type": "input",
 					"left": 470,
-					"top": 300,
+					"top": 340,
 					"width": 500,
 					"height": 440,
 					"enterable": false,
@@ -538,7 +538,7 @@
 				"Run": {
 					"type": "button",
 					"text": "Run",
-					"top": 220,
+					"top": 258,
 					"left": 520,
 					"width": 82,
 					"height": 22,
@@ -551,8 +551,8 @@
 				"Products1": {
 					"type": "listbox",
 					"left": 50,
-					"top": 300,
-					"width": 265,
+					"top": 340,
+					"width": 365,
 					"height": 181,
 					"events": [
 						"onSelectionChange"
@@ -569,6 +569,18 @@
 					"columns": [
 						{
 							"header": {
+								"name": "Header6",
+								"text": "Manufacturer"
+							},
+							"name": "Column6",
+							"footer": {
+								"name": "Footer6"
+							},
+							"dataSource": "This:C1470.manufacturer",
+							"width": 100
+						},
+						{
+							"header": {
 								"name": "Header3",
 								"text": "Name"
 							},
@@ -582,7 +594,7 @@
 						{
 							"header": {
 								"name": "Header1",
-								"text": "Header1"
+								"text": "Price"
 							},
 							"name": "Column1",
 							"dataSource": "This:C1470.price",
@@ -590,14 +602,15 @@
 							"width": 100,
 							"footer": {
 								"name": "Footer1"
-							}
+							},
+							"textAlign": "center"
 						}
 					]
 				},
 				"Text3": {
 					"type": "text",
 					"text": "Products list",
-					"top": 270,
+					"top": 310,
 					"left": 50,
 					"width": 180,
 					"height": 20,
@@ -608,7 +621,7 @@
 				"Text4": {
 					"type": "text",
 					"text": "Response (entity selection)",
-					"top": 490,
+					"top": 530,
 					"left": 50,
 					"width": 250,
 					"height": 20,
@@ -619,7 +632,7 @@
 				"Text5": {
 					"type": "text",
 					"text": "Shopping singleton",
-					"top": 270,
+					"top": 310,
 					"left": 470,
 					"width": 250,
 					"height": 20,
@@ -630,7 +643,7 @@
 				"Text12": {
 					"type": "text",
 					"text": "La fonction appelée avec GET crée un fichier sur le disque ...",
-					"top": 180,
+					"top": 220,
 					"left": 62,
 					"width": 535,
 					"height": 17,
@@ -652,5 +665,5 @@
 			"View 1": {}
 		}
 	},
-	"geometryStamp": 2443
+	"geometryStamp": 2493
 }
