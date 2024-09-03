@@ -651,6 +651,29 @@
 					"fontSize": 14
 				}
 			}
+		},
+		{
+			"objects": {
+				"Input": {
+					"type": "input",
+					"left": 60,
+					"top": 100,
+					"width": 500,
+					"height": 30,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Input.4dm",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dataSource": "\"Click here to run the demo in Qodly studio\"",
+					"enterable": false,
+					"focusable": false,
+					"textDecoration": "underline",
+					"stroke": "#1e90ff",
+					"fontSize": 18
+				}
+			}
 		}
 	],
 	"$4d": {
@@ -664,5 +687,5 @@
 			"View 1": {}
 		}
 	},
-	"geometryStamp": 2493
+	"geometryStamp": 2511
 }
