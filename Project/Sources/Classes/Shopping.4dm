@@ -6,13 +6,8 @@ exposed onHTTPGet Function buildShoppingList($products : cs:C1710.ProductsSelect
 	
 	var $p : cs:C1710.ProductsEntity
 	var $content : Text
-	var $file : 4D:C1709.File
-	
-	var $blob : Blob
 	var $response : 4D:C1709.OutgoingMessage:=4D:C1709.OutgoingMessage.new()
 	
-	
-	$file:=File:C1566("/RESOURCES/shoppingList.txt")
 	$content:=""
 	
 	For each ($p; $products)
@@ -20,10 +15,7 @@ exposed onHTTPGet Function buildShoppingList($products : cs:C1710.ProductsSelect
 		$content:=$content+Char:C90(Carriage return:K15:38)
 	End for each 
 	
-	$file.setText($content)
-	$blob:=$file.getContent()
-	
-	$response.setBody($blob)
+	$response.setBody($content)
 	$response.setHeader("Content-Type"; "text/plain")
 	$response.setStatus(200)
 	

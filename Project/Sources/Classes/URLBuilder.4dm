@@ -6,6 +6,7 @@ shared singleton Class constructor()
 exposed shared Function buildThumbnailURL($product : cs:C1710.ProductsEntity; $size : Text) : Text
 	
 	var $url : Text
+	var $width; $height : Integer
 	
 	Case of 
 		: ($size="small")
