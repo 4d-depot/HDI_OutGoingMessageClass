@@ -27,13 +27,10 @@ exposed onHTTPGet Function getThumbnail($name : Text; $width : Integer; $height 
 exposed onHTTPGet Function getUserManual($product : cs:C1710.ProductsEntity) : 4D:C1709.OutgoingMessage
 	
 	var $file : 4D:C1709.File
-	var $blob : Blob
 	var $response : 4D:C1709.OutgoingMessage:=4D:C1709.OutgoingMessage.new()
 	
 	$file:=File:C1566("/RESOURCES/User manuals/"+$product.name+".pdf")
-	
-	$blob:=$file.getContent()
-	$response.setBody($blob)
+	$response.setBody($file.getContent())
 	$response.setHeader("Content-Type"; "application/pdf")
 	$response.setStatus(200)
 	

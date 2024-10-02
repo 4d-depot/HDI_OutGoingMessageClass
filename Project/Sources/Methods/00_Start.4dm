@@ -1,8 +1,8 @@
 //%attributes = {}
-C_LONGINT:C283($1)
-C_LONGINT:C283($ps; $win)
-C_OBJECT:C1216($options)
-C_TEXT:C284($cr)
+_O_C_LONGINT:C283($1)
+_O_C_LONGINT:C283($ps; $win)
+_O_C_OBJECT:C1216($options)
+_O_C_TEXT:C284($cr)
 
 Case of 
 	: (Count parameters:C259=0)
@@ -33,8 +33,8 @@ Case of
 		$options.blog:="blog.4d.com"
 		$options.info:="Setup the info in the 00_Start Method"  //ex : "4D View Pro feature"
 		
-		$options.minimumVersion:="2000"  // 1660 means 16R6   1601 means 16.1 (do not use !)
-
+		$options.minimumVersion:="2070"  // 1660 means 16R6   1601 means 16.1 (do not use !)
+		
 		
 		// $options.license:=4D View license  // IF ANY NEEDED
 		

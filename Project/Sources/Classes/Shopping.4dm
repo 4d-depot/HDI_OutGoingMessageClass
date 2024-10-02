@@ -10,13 +10,15 @@ exposed onHTTPGet Function buildShoppingList($products : cs:C1710.ProductsSelect
 	
 	$content:=""
 	
-	For each ($p; $products)
-		$content:=$content+" "+$p.manufacturer+" - "+$p.name
-		$content:=$content+Char:C90(Carriage return:K15:38)
-	End for each 
-	
-	$response.setBody($content)
-	$response.setHeader("Content-Type"; "text/plain")
-	$response.setStatus(200)
+	If ($products#Null:C1517)
+		For each ($p; $products)
+			$content:=$content+" "+$p.manufacturer+" - "+$p.name
+			//$content:=$content+Char(Carriage return)
+		End for each 
+		
+		$response.setBody($content)
+		$response.setHeader("Content-Type"; "text/plain")
+		$response.setStatus(200)
+	End if 
 	
 	return $response

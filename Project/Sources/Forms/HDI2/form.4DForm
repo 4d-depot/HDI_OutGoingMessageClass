@@ -383,7 +383,7 @@
 					"type": "input",
 					"left": 320,
 					"top": 370,
-					"width": 500,
+					"width": 600,
 					"height": 300,
 					"enterable": false,
 					"focusable": false,
@@ -687,5 +687,5 @@
 			"View 1": {}
 		}
 	},
-	"geometryStamp": 2511
+	"geometryStamp": 2512
 }

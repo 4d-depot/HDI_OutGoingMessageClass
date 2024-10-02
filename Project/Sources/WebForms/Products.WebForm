@@ -84,7 +84,6 @@
 			"nodes": [
 				"S5K5xT0MAE",
 				"UpSG4iycWs",
-				"67QJjra4tz",
 				"sLh6O8NQum"
 			],
 			"linkedNodes": {}
@@ -427,7 +426,43 @@
 			},
 			"isCanvas": true,
 			"props": {
-				"events": [],
+				"events": [
+					{
+						"type": "method",
+						"dataclass": "Products",
+						"events": [
+							"onclick"
+						],
+						"id": "owwZE9UMdCQJ8KEJtio88f",
+						"method": "ds.Products.getThumbnail",
+						"params": [
+							{
+								"name": "name",
+								"type": "Text",
+								"datasource": "$This.name",
+								"id": "cEkfFsDzaENkCoH5qZw1SN"
+							},
+							{
+								"name": "width",
+								"type": "Integer",
+								"datasource": "pictureSize",
+								"id": "jjahJMdkT3g2maTFuLpYdW"
+							},
+							{
+								"name": "height",
+								"type": "Integer",
+								"datasource": "pictureSize",
+								"id": "dLspGkKbQUoTvnRAuHwjSk"
+							}
+						],
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "4D.OutgoingMessage"
+						},
+						"openIn": "none"
+					}
+				],
 				"style": {
 					"paddingTop": "0px",
 					"paddingLeft": "0px",
@@ -456,85 +491,7 @@
 			"props": {
 				"text": "Download picture product",
 				"classNames": [],
-				"events": [
-					{
-						"type": "method",
-						"dataclass": "URLBuilder",
-						"events": [
-							"onclick"
-						],
-						"id": "iNYj6LZNHH9L6ZKgt7bT24",
-						"method": "URLBuilder.buildThumbnailURL",
-						"params": [
-							{
-								"name": "product",
-								"type": "cs.ProductsEntity",
-								"datasource": "$This",
-								"id": "tDSNtYxZ8B5MAYFr2eTFej"
-							},
-							{
-								"name": "size",
-								"type": "Text",
-								"datasource": "pictureSize",
-								"id": "1SKxLQDXMPG86yEUGFCEki"
-							}
-						],
-						"datasource": "",
-						"methodType": "singleton",
-						"returns": {
-							"name": "result",
-							"type": "Text",
-							"datasource": "photoURL"
-						},
-						"disabled": true
-					},
-					{
-						"type": "navigation",
-						"id": "ixbmgezShxg4zPATR4mcEE",
-						"events": [
-							"onclick"
-						],
-						"externalLink": true,
-						"parent": "new-tab",
-						"isHardCoded": false,
-						"target": "photoURL",
-						"disabled": true
-					},
-					{
-						"type": "method",
-						"dataclass": "Products",
-						"events": [
-							"onclick"
-						],
-						"id": "nwK53xmkqn73nRSMJYmWZG",
-						"method": "ds.Products.getThumbnail",
-						"params": [
-							{
-								"name": "name",
-								"type": "Text",
-								"datasource": "$This.name",
-								"id": "fbvLhKVJxmnJXjB3Q6RVNm"
-							},
-							{
-								"name": "width",
-								"type": "Integer",
-								"datasource": "pictureSize",
-								"id": "fa6T4Sn6aJREizj3h67FJV"
-							},
-							{
-								"name": "height",
-								"type": "Integer",
-								"datasource": "pictureSize",
-								"id": "rNpMzXy4b25LPB7x4KUBDx"
-							}
-						],
-						"datasource": "",
-						"returns": {
-							"name": "result",
-							"type": "4D.OutgoingMessage"
-						}
-					}
-				],
+				"events": [],
 				"iconPosition": "hidden",
 				"style": {
 					"display": "flex",
@@ -692,43 +649,6 @@
 			"displayName": "Text",
 			"custom": {},
 			"parent": "UpSG4iycWs",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {}
-		},
-		"67QJjra4tz": {
-			"type": {
-				"resolvedName": "Text"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [],
-				"doc": [
-					{
-						"type": "paragraph",
-						"children": [
-							{
-								"text": "Make a function call instead of a navigation action",
-								"bold": false,
-								"italic": false,
-								"underlined": false,
-								"strikethrough": false
-							}
-						]
-					}
-				],
-				"datasource": "",
-				"style": {
-					"fontSize": "22px",
-					"color": "#e73351ff",
-					"fontWeight": "500",
-					"width": "fit-content"
-				},
-				"iterableChild": true
-			},
-			"displayName": "Text",
-			"custom": {},
-			"parent": "HtFYLGUpXm",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}

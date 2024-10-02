@@ -1,5 +1,5 @@
 //%attributes = {"invisible":true}
-C_COLLECTION:C1488(Infos)
-C_OBJECT:C1216(objTabs)
-C_VARIANT:C1683(btnTrace)
-C_COLLECTION:C1488(LinesCode)
+_O_C_COLLECTION:C1488(Infos)
+_O_C_OBJECT:C1216(objTabs)
+_O_C_VARIANT:C1683(btnTrace)
+_O_C_COLLECTION:C1488(LinesCode)

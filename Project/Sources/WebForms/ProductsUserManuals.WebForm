@@ -76,7 +76,6 @@
 			"hidden": false,
 			"nodes": [
 				"S5K5xT0MAE",
-				"67QJjra4tz",
 				"sLh6O8NQum"
 			],
 			"linkedNodes": {}
@@ -419,7 +418,31 @@
 			},
 			"isCanvas": true,
 			"props": {
-				"events": [],
+				"events": [
+					{
+						"type": "method",
+						"dataclass": "Products",
+						"events": [
+							"onclick"
+						],
+						"id": "pF1PL8hbGVTyQmkmVgm7E4",
+						"method": "ds.Products.getUserManual",
+						"params": [
+							{
+								"name": "product",
+								"type": "cs.ProductsEntity",
+								"datasource": "$This",
+								"id": "oQbK6J7BdhciBuWJxWn33x"
+							}
+						],
+						"datasource": "",
+						"returns": {
+							"name": "result",
+							"type": "4D.OutgoingMessage"
+						},
+						"openIn": "same-tab"
+					}
+				],
 				"style": {
 					"paddingTop": "0px",
 					"paddingLeft": "0px",
@@ -448,68 +471,7 @@
 			"props": {
 				"text": "Download user manual",
 				"classNames": [],
-				"events": [
-					{
-						"type": "method",
-						"dataclass": "Products",
-						"events": [
-							"onclick"
-						],
-						"id": "itpD6Ccr1AvYW3oMbJUr5P",
-						"method": "ds.Products.getUserManual",
-						"params": [
-							{
-								"name": "product",
-								"type": "cs.ProductsEntity",
-								"datasource": "$This",
-								"id": "1LQT93GofYAPrHbEgP395z"
-							}
-						],
-						"datasource": "",
-						"returns": {
-							"name": "result",
-							"type": "4D.OutgoingMessage"
-						},
-						"disabled": false
-					},
-					{
-						"type": "method",
-						"dataclass": "URLBuilder",
-						"events": [
-							"onclick"
-						],
-						"id": "5Gji8JjHia1MaE5abAcJJR",
-						"method": "URLBuilder.buildUserManualURL",
-						"params": [
-							{
-								"name": "product",
-								"type": "cs.ProductsEntity",
-								"datasource": "$This",
-								"id": "xyD8CUqRbbLqywTrUj9uwm"
-							}
-						],
-						"datasource": "",
-						"methodType": "singleton",
-						"returns": {
-							"name": "result",
-							"type": "Text",
-							"datasource": "userManualURL"
-						},
-						"disabled": true
-					},
-					{
-						"type": "navigation",
-						"id": "47RpFa9k9B1D2miJaY6DTH",
-						"events": [
-							"onclick"
-						],
-						"externalLink": true,
-						"parent": "new-tab",
-						"isHardCoded": false,
-						"target": "userManualURL",
-						"disabled": true
-					}
-				],
+				"events": [],
 				"iconPosition": "hidden",
 				"style": {
 					"display": "flex",
@@ -584,43 +546,6 @@
 				"style": {
 					"fontSize": "28px",
 					"color": "#2E59BD",
-					"fontWeight": "500",
-					"width": "fit-content"
-				},
-				"iterableChild": true
-			},
-			"displayName": "Text",
-			"custom": {},
-			"parent": "HtFYLGUpXm",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {}
-		},
-		"67QJjra4tz": {
-			"type": {
-				"resolvedName": "Text"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [],
-				"doc": [
-					{
-						"type": "paragraph",
-						"children": [
-							{
-								"text": "Make a function call instead of a navigation action",
-								"bold": false,
-								"italic": false,
-								"underlined": false,
-								"strikethrough": false
-							}
-						]
-					}
-				],
-				"datasource": "",
-				"style": {
-					"fontSize": "22px",
-					"color": "#e73351ff",
 					"fontWeight": "500",
 					"width": "fit-content"
 				},

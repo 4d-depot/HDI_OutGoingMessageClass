@@ -101,23 +101,7 @@
 				"classNames": [
 					"matrix_Css"
 				],
-				"events": [
-					{
-						"type": "simple-action",
-						"id": "fHFRA43rcBybAzFcMsgVyB",
-						"events": [
-							"onselect"
-						],
-						"action": "all",
-						"actionType": "datasource",
-						"datasource": {
-							"name": "shoppingCart",
-							"type": "entitysel",
-							"from": "",
-							"namespace": ""
-						}
-					}
-				],
+				"events": [],
 				"style": {
 					"height": "480px",
 					"borderStyle": "none",
@@ -1135,86 +1119,6 @@
 			"nodes": [],
 			"linkedNodes": {}
 		},
-		"UwPUd51DCr": {
-			"type": {
-				"resolvedName": "StyleBox"
-			},
-			"isCanvas": true,
-			"props": {
-				"events": [
-					{
-						"type": "method",
-						"dataclass": "Shopping",
-						"events": [
-							"onclick"
-						],
-						"id": "pd6J5KJNVsbTWLXppe2D3R",
-						"method": "Shopping.buildShoppingList",
-						"params": [
-							{
-								"name": "products",
-								"type": "cs.ProductsSelection",
-								"datasource": "shoppingCart",
-								"id": "wLGPRPjLoZx993sg2tAY3P"
-							}
-						],
-						"datasource": "",
-						"methodType": "singleton",
-						"returns": {
-							"name": "result",
-							"type": "4D.OutgoingMessage"
-						}
-					}
-				],
-				"style": {
-					"backgroundColor": "#E4F1FC",
-					"borderWidth": "1px",
-					"borderColor": "#5FB2F9",
-					"display": "flex",
-					"justifyContent": "center",
-					"alignItems": "center",
-					"flexDirection": "row",
-					"color": "#56AEF9",
-					"borderRadius": "10px",
-					"gap": "10px",
-					"paddingTop": "10px",
-					"paddingBottom": "10px",
-					"width": "auto",
-					"height": "47px",
-					"cursor": "pointer",
-					"fontSize": "22px"
-				},
-				"serverSideRef": "onsite",
-				"classNames": [],
-				"iterableChild": true
-			},
-			"displayName": "Stylebox",
-			"custom": {},
-			"parent": "T2vskVhVVa",
-			"hidden": false,
-			"nodes": [
-				"3zu7yMEj6y",
-				"VZE-BxVgzS"
-			],
-			"linkedNodes": {}
-		},
-		"3zu7yMEj6y": {
-			"type": {
-				"resolvedName": "Icon"
-			},
-			"isCanvas": false,
-			"props": {
-				"classNames": [],
-				"events": [],
-				"icon": "fa-solid fa-list-ul"
-			},
-			"displayName": "Icon",
-			"custom": {},
-			"parent": "UwPUd51DCr",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {}
-		},
 		"T2vskVhVVa": {
 			"type": {
 				"resolvedName": "StyleBox"
@@ -1236,41 +1140,77 @@
 			"hidden": false,
 			"nodes": [
 				"cNpOfp_5Z0",
-				"UwPUd51DCr"
+				"zhsYqrDLaL"
 			],
 			"linkedNodes": {}
 		},
-		"VZE-BxVgzS": {
+		"zhsYqrDLaL": {
 			"type": {
-				"resolvedName": "Text"
+				"resolvedName": "Button"
 			},
 			"isCanvas": false,
 			"props": {
-				"events": [],
-				"iterableChild": true,
-				"doc": [
+				"text": "Build shopping list",
+				"classNames": [],
+				"events": [
 					{
-						"type": "paragraph",
-						"children": [
+						"type": "method",
+						"dataclass": "Shopping",
+						"events": [
+							"onclick"
+						],
+						"id": "dGgZSX3WuawYrTVTYJJX9Y",
+						"method": "Shopping.buildShoppingList",
+						"params": [
 							{
-								"text": "Build shopping list",
-								"bold": false,
-								"italic": false,
-								"underlined": false,
-								"strikethrough": false
+								"name": "products",
+								"type": "cs.ProductsSelection",
+								"datasource": "shoppingCart",
+								"id": "dyz9mNRwQi1M9WjswWafyS"
 							}
-						]
+						],
+						"datasource": "",
+						"methodType": "singleton",
+						"returns": {
+							"name": "result",
+							"type": "4D.OutgoingMessage"
+						},
+						"openIn": "same-tab"
 					}
 				],
-				"datasource": "",
+				"iconPosition": "left",
 				"style": {
+					"display": "flex",
+					"backgroundColor": "#E4F1FC",
+					"color": "#56AEF9",
 					"fontWeight": "500",
-					"fontSize": "1em"
+					"fontSize": "22px",
+					"borderColor": "#5FB2F9",
+					"borderWidth": "1px"
 				}
 			},
-			"displayName": "Text",
+			"displayName": "Button",
 			"custom": {},
-			"parent": "UwPUd51DCr",
+			"parent": "T2vskVhVVa",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "oEa1st3H8_"
+			}
+		},
+		"oEa1st3H8_": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-solid fa-bars"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "zhsYqrDLaL",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}
