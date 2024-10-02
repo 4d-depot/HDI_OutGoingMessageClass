@@ -35,6 +35,27 @@
 				"parentId": null,
 				"id": "PO_InP1AtRMfsQv4NvnUt"
 			}
+		],
+		"states": [
+			{
+				"label": "Base",
+				"id": "root"
+			},
+			{
+				"label": "ShoppingCartNotEmpty",
+				"id": "iwrbKA3vuERTuMSnuNs7MY",
+				"conditions": {
+					"id": "p5QpWPyCspHmCV8ewLWVMR",
+					"type": "datasource",
+					"name": "condition",
+					"value": "0",
+					"valueType": "hardCoded",
+					"path": "shoppingCart.length",
+					"dsType": "long",
+					"op": "neq",
+					"dataType": "number"
+				}
+			}
 		]
 	},
 	"components": {
@@ -117,7 +138,16 @@
 				"currentElement": ""
 			},
 			"displayName": "Matrix",
-			"custom": {},
+			"custom": {
+				"states:iwrbKA3vuERTuMSnuNs7MY": {
+					"gridProps": {
+						"styleboxWidth": 1,
+						"styleboxHeight": 160,
+						"styleboxPercentWidth": "33%",
+						"enableMosaic": true
+					}
+				}
+			},
 			"parent": "4Q-EQpBobQ",
 			"hidden": false,
 			"nodes": [],
@@ -716,7 +746,16 @@
 				"currentElement": ""
 			},
 			"displayName": "Matrix",
-			"custom": {},
+			"custom": {
+				"states:iwrbKA3vuERTuMSnuNs7MY": {
+					"gridProps": {
+						"styleboxWidth": 1,
+						"styleboxHeight": 160,
+						"styleboxPercentWidth": "33%",
+						"enableMosaic": true
+					}
+				}
+			},
 			"parent": "TQS0lj8dYJ",
 			"hidden": false,
 			"nodes": [],
@@ -1187,10 +1226,15 @@
 					"fontSize": "22px",
 					"borderColor": "#5FB2F9",
 					"borderWidth": "1px"
-				}
+				},
+				"disabled": true
 			},
 			"displayName": "Button",
-			"custom": {},
+			"custom": {
+				"states:iwrbKA3vuERTuMSnuNs7MY": {
+					"disabled": false
+				}
+			},
 			"parent": "T2vskVhVVa",
 			"hidden": false,
 			"nodes": [],
