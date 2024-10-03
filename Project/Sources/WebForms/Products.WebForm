@@ -460,7 +460,7 @@
 							"name": "result",
 							"type": "4D.OutgoingMessage"
 						},
-						"openIn": "none"
+						"openIn": "same-tab"
 					}
 				],
 				"style": {

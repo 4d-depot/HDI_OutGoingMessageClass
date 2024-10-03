@@ -105,7 +105,6 @@
 			"parent": "ROOT",
 			"hidden": false,
 			"nodes": [
-				"67QJjra4tz",
 				"65LcmSfrEU",
 				"T2vskVhVVa"
 			],
@@ -456,43 +455,6 @@
 			"displayName": "Text",
 			"custom": {},
 			"parent": "4Q-EQpBobQ",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {}
-		},
-		"67QJjra4tz": {
-			"type": {
-				"resolvedName": "Text"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [],
-				"doc": [
-					{
-						"type": "paragraph",
-						"children": [
-							{
-								"text": "Make a function call instead of a navigation action",
-								"bold": false,
-								"italic": false,
-								"underlined": false,
-								"strikethrough": false
-							}
-						]
-					}
-				],
-				"datasource": "",
-				"style": {
-					"fontSize": "22px",
-					"color": "#e73351ff",
-					"fontWeight": "500",
-					"width": "fit-content"
-				},
-				"iterableChild": true
-			},
-			"displayName": "Text",
-			"custom": {},
-			"parent": "HtFYLGUpXm",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}
