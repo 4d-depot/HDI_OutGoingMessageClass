@@ -17,7 +17,5 @@ exposed onHTTPGet Function buildShoppingList($products : cs:C1710.ProductsSelect
 	
 	$response.setBody($content)
 	$response.setHeader("Content-Type"; "text/plain")
-	$response.setStatus(200)
-	
 	
 	return $response

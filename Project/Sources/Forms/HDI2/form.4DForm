@@ -456,7 +456,7 @@
 				"Text18": {
 					"type": "text",
 					"text": "Shopping list URL:",
-					"top": 780,
+					"top": 800,
 					"left": 50,
 					"width": 150,
 					"height": 20,
@@ -471,9 +471,11 @@
 					"top": 250,
 					"width": 460,
 					"height": 30,
-					"enterable": true,
+					"enterable": false,
 					"focusable": false,
-					"dataSource": "Form:C1466.getEntitySet"
+					"dataSource": "Form:C1466.getEntitySet",
+					"borderStyle": "none",
+					"fill": "automatic"
 				},
 				"Input8": {
 					"type": "input",
@@ -509,7 +511,7 @@
 				"Input9": {
 					"type": "input",
 					"left": 220,
-					"top": 780,
+					"top": 800,
 					"width": 700,
 					"height": 40,
 					"dataSource": "Form:C1466.entitySelectionURL",
@@ -548,7 +550,7 @@
 					"method": "ObjectMethods/Run.4dm",
 					"focusable": false
 				},
-				"Products1": {
+				"ProductsLB": {
 					"type": "listbox",
 					"left": 50,
 					"top": 340,
@@ -558,7 +560,7 @@
 						"onSelectionChange"
 					],
 					"listboxType": "collection",
-					"selectionMode": "none",
+					"selectionMode": "multiple",
 					"rowHeight": "20px",
 					"headerHeight": "21px",
 					"dataSource": "Form:C1466.orderedProducts",
@@ -641,16 +643,20 @@
 				},
 				"Text12": {
 					"type": "text",
-					"text": "La fonction appelée avec GET crée un fichier sur le disque ...",
+					"text": "Select products whose price is <= 100",
 					"top": 220,
-					"left": 62,
-					"width": 535,
-					"height": 17,
+					"left": 50,
+					"width": 500,
+					"height": 20,
+					"fontSize": 18,
 					"fontWeight": "bold",
-					"stroke": "#dc143c",
-					"fontSize": 14
+					"stroke": "#6495ed"
 				}
-			}
+			},
+			"entryOrder": [
+				"Download",
+				"RunRESTRequest"
+			]
 		},
 		{
 			"objects": {
@@ -687,5 +693,5 @@
 			"View 1": {}
 		}
 	},
-	"geometryStamp": 2512
+	"geometryStamp": 2533
 }

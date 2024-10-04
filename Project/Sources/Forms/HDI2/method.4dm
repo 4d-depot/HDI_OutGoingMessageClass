@@ -35,9 +35,8 @@ Case of
 		
 		OBJECT SET ENABLED:C1123(*; "Download"; False:C215)
 		
-		
 	: (Form event code:C388=On Close Box:K2:21)
-		If (Is Windows:C1573 && Get application info:C1599().SDIMode)
+		If (Is Windows:C1573 && Application info:C1599().SDIMode)
 			QUIT 4D:C291
 		Else 
 			CANCEL:C270

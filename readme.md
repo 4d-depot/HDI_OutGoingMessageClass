@@ -1,8 +1,10 @@
-# HDI_Template_20
+# HDI_OutGoingMessageClass
 
-Description (4D 20 Rx)
+Description (4D 20 R8)
 
-Find more information on the [blog post](https://blog.4d.com/).
+How to use the new OutgoingMessage class
+
+Find more information on the [blog post](https://blog.4d.com/enhance-web-applications-with-the-outgoingmessage-class/).
 
 ## Installing and Using a 4D Project
 

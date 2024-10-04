@@ -32,7 +32,30 @@ exposed onHTTPGet Function getUserManual($product : cs:C1710.ProductsEntity) : 4
 	$file:=File:C1566("/RESOURCES/User manuals/"+$product.name+".pdf")
 	$response.setBody($file.getContent())
 	$response.setHeader("Content-Type"; "application/pdf")
-	$response.setStatus(200)
+	
+	return $response
+	
+	
+	
+exposed onHTTPGet Function getUserManual_TO_DELETE($productId : Integer; $type : Text) : 4D:C1709.OutgoingMessage
+	
+	var $file : 4D:C1709.File
+	var $response : 4D:C1709.OutgoingMessage:=4D:C1709.OutgoingMessage.new()
+	var $doc : Text
+	
+	$doc:="/RESOURCES/User manuals/product_"+String:C10($productId)
+	
+	Case of 
+		: ($type="pdf")
+			$file:=File:C1566($doc+".pdf")
+			$response.setHeader("Content-Type"; "application/pdf")
+			
+		: ($type="jpeg")
+			$file:=File:C1566($doc+".jpeg")
+			$response.setHeader("Content-Type"; "image/jpeg")
+	End case 
+	
+	$response.setBody($file.getContent())
 	
 	return $response
 	
