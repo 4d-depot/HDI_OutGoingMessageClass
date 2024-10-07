@@ -41,7 +41,7 @@
 				"className": "bg-white h-full w-full px-6",
 				"style": {
 					"display": "flex",
-					"flexDirection": "column",
+					"flexDirection": "row",
 					"gap": "20px",
 					"alignItems": "start"
 				}
@@ -51,8 +51,9 @@
 			"parent": "",
 			"hidden": false,
 			"nodes": [
-				"HtFYLGUpXm",
-				"-kp1ccd7qh"
+				"uFb9BlTJMe",
+				"TA3YKTNcdd",
+				"RS8-fUreti"
 			],
 			"linkedNodes": {}
 		},
@@ -72,7 +73,7 @@
 			},
 			"displayName": "Stylebox",
 			"custom": {},
-			"parent": "ROOT",
+			"parent": "TA3YKTNcdd",
 			"hidden": false,
 			"nodes": [
 				"S5K5xT0MAE",
@@ -679,7 +680,7 @@
 			},
 			"displayName": "Stylebox",
 			"custom": {},
-			"parent": "ROOT",
+			"parent": "TA3YKTNcdd",
 			"hidden": false,
 			"nodes": [
 				"jBufCJb91_",
@@ -797,6 +798,289 @@
 			"displayName": "Text",
 			"custom": {},
 			"parent": "jBufCJb91_",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"TA3YKTNcdd": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [
+				"HtFYLGUpXm",
+				"-kp1ccd7qh"
+			],
+			"linkedNodes": {}
+		},
+		"uFb9BlTJMe": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"display": "flex",
+					"flexDirection": "column",
+					"width": "25%",
+					"gap": "20px",
+					"alignItems": "center"
+				},
+				"classNames": [
+					"cartStyle"
+				]
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [
+				"PpidXX7CBn",
+				"kEnTk8QDzQ"
+			],
+			"linkedNodes": {}
+		},
+		"PpidXX7CBn": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "When clicking on the Download user manual link, the getUserManual() function of the Products dataclass is called.",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": ""
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": "The product entity is passed as parameter."
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"style": {
+					"fontSize": "20px",
+					"color": "#777E90",
+					"fontWeight": "400",
+					"width": "auto"
+				},
+				"iterableChild": true
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "uFb9BlTJMe",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"qrvtwneVlr": {
+			"type": {
+				"resolvedName": "Image"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"style": {
+					"width": 250,
+					"height": "auto"
+				},
+				"imgSrc": "/$shared/Qodly_getUserManual.png"
+			},
+			"displayName": "Image",
+			"custom": {},
+			"parent": "kEnTk8QDzQ",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"RS8-fUreti": {
+			"type": {
+				"resolvedName": "Dialog"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"overlay": true,
+				"serverSideRef": "ScreenShot"
+			},
+			"displayName": "Dialog",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"Dialog": "3-Q3L_WJYF"
+			}
+		},
+		"3-Q3L_WJYF": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"className": "h-full",
+				"style": {
+					"display": "flex",
+					"flexDirection": "column",
+					"gap": "20px",
+					"alignItems": "center"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "RS8-fUreti",
+			"hidden": false,
+			"nodes": [
+				"nbCl0guiGl",
+				"YfILAH5dXi"
+			],
+			"linkedNodes": {}
+		},
+		"nbCl0guiGl": {
+			"type": {
+				"resolvedName": "Image"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"style": {
+					"width": "fit-content",
+					"height": "auto"
+				},
+				"imgSrc": "/$shared/Qodly_getUserManual.png"
+			},
+			"displayName": "Image",
+			"custom": {},
+			"parent": "3-Q3L_WJYF",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"kEnTk8QDzQ": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"display": "flex",
+					"gap": "20px",
+					"justifyContent": "center",
+					"alignItems": "center"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "uFb9BlTJMe",
+			"hidden": false,
+			"nodes": [
+				"ECQlviQAXY",
+				"qrvtwneVlr"
+			],
+			"linkedNodes": {}
+		},
+		"ECQlviQAXY": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [
+					{
+						"type": "dialog",
+						"id": "fpCU4jMHBoU9bWHWXJr42p",
+						"events": [
+							"onclick"
+						],
+						"actionType": "open",
+						"targetDialog": "ScreenShot"
+					}
+				],
+				"icon": "fa-solid fa-magnifying-glass-plus",
+				"style": {
+					"color": "#777E90",
+					"fontSize": "40px"
+				}
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "kEnTk8QDzQ",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"YfILAH5dXi": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [
+					{
+						"type": "dialog",
+						"id": "9gV9VcdByCTif3WKuFtTeg",
+						"events": [
+							"onclick"
+						],
+						"actionType": "close",
+						"targetDialog": "ScreenShot"
+					}
+				],
+				"icon": "fa-solid fa-circle-xmark",
+				"style": {
+					"color": "#777E90",
+					"fontSize": "40px"
+				}
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "3-Q3L_WJYF",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}

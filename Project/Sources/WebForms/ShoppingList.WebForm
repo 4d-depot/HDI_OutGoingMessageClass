@@ -71,7 +71,7 @@
 				"className": "bg-white h-full w-full px-6",
 				"style": {
 					"display": "flex",
-					"flexDirection": "column",
+					"flexDirection": "row",
 					"gap": "20px",
 					"alignItems": "start"
 				}
@@ -81,7 +81,9 @@
 			"parent": "",
 			"hidden": false,
 			"nodes": [
-				"HtFYLGUpXm"
+				"mfcwMYW28P",
+				"HtFYLGUpXm",
+				"guJalD5ftv"
 			],
 			"linkedNodes": {}
 		},
@@ -1217,6 +1219,270 @@
 			"displayName": "Icon",
 			"custom": {},
 			"parent": "zhsYqrDLaL",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"mfcwMYW28P": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"display": "flex",
+					"flexDirection": "column",
+					"width": "25%",
+					"gap": "20px",
+					"alignItems": "center"
+				},
+				"classNames": [
+					"cartStyle"
+				]
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [
+				"ppcPftLk5s",
+				"qVHgkrhBJA"
+			],
+			"linkedNodes": {}
+		},
+		"ppcPftLk5s": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "When clicking on the Build shopping list button, the buildShoppingList() function of the Shopping singleton is called.",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": ""
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": "The shopping cart Products entity selection is passed as parameter."
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"style": {
+					"fontSize": "20px",
+					"color": "#777E90",
+					"fontWeight": "400",
+					"width": "auto"
+				},
+				"iterableChild": true
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "mfcwMYW28P",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"ckrdt23jDg": {
+			"type": {
+				"resolvedName": "Image"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"style": {
+					"width": 250,
+					"height": "auto"
+				},
+				"imgSrc": "/$shared/Qodly_shoppingList.png"
+			},
+			"displayName": "Image",
+			"custom": {},
+			"parent": "qVHgkrhBJA",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"guJalD5ftv": {
+			"type": {
+				"resolvedName": "Dialog"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"overlay": true,
+				"serverSideRef": "ScreenShot"
+			},
+			"displayName": "Dialog",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"Dialog": "OR5vUSKBA7"
+			}
+		},
+		"OR5vUSKBA7": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"className": "h-full",
+				"style": {
+					"display": "flex",
+					"flexDirection": "column",
+					"gap": "20px",
+					"alignItems": "center"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "guJalD5ftv",
+			"hidden": false,
+			"nodes": [
+				"5er4aZS4QI",
+				"U2oRNkQvp3"
+			],
+			"linkedNodes": {}
+		},
+		"5er4aZS4QI": {
+			"type": {
+				"resolvedName": "Image"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"style": {
+					"width": "fit-content",
+					"height": "auto"
+				},
+				"imgSrc": "/$shared/Qodly_shoppingList.png"
+			},
+			"displayName": "Image",
+			"custom": {},
+			"parent": "OR5vUSKBA7",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"U2oRNkQvp3": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [
+					{
+						"type": "dialog",
+						"id": "9gV9VcdByCTif3WKuFtTeg",
+						"events": [
+							"onclick"
+						],
+						"actionType": "close",
+						"targetDialog": "ScreenShot"
+					}
+				],
+				"icon": "fa-solid fa-circle-xmark",
+				"style": {
+					"color": "#777E90",
+					"fontSize": "40px"
+				}
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "OR5vUSKBA7",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"qVHgkrhBJA": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"display": "flex",
+					"justifyContent": "center",
+					"alignItems": "center",
+					"gap": "20px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "mfcwMYW28P",
+			"hidden": false,
+			"nodes": [
+				"RBqZVFftrG",
+				"ckrdt23jDg"
+			],
+			"linkedNodes": {}
+		},
+		"RBqZVFftrG": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [
+					{
+						"type": "dialog",
+						"id": "fpCU4jMHBoU9bWHWXJr42p",
+						"events": [
+							"onclick"
+						],
+						"actionType": "open",
+						"targetDialog": "ScreenShot"
+					}
+				],
+				"icon": "fa-solid fa-magnifying-glass-plus",
+				"style": {
+					"color": "#777E90",
+					"fontSize": "40px"
+				}
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "qVHgkrhBJA",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}

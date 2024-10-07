@@ -48,7 +48,7 @@
 				"className": "bg-white h-full w-full px-6",
 				"style": {
 					"display": "flex",
-					"flexDirection": "column",
+					"flexDirection": "row",
 					"gap": "20px",
 					"alignItems": "start"
 				}
@@ -58,8 +58,9 @@
 			"parent": "",
 			"hidden": false,
 			"nodes": [
-				"HtFYLGUpXm",
-				"-kp1ccd7qh"
+				"OSi_ljEP-y",
+				"noS36RI4hl",
+				"j9ArXXaMu3"
 			],
 			"linkedNodes": {}
 		},
@@ -79,10 +80,11 @@
 			},
 			"displayName": "Stylebox",
 			"custom": {},
-			"parent": "ROOT",
+			"parent": "noS36RI4hl",
 			"hidden": false,
 			"nodes": [
 				"S5K5xT0MAE",
+				"k_jzuo7kUe",
 				"UpSG4iycWs",
 				"sLh6O8NQum"
 			],
@@ -774,7 +776,7 @@
 			},
 			"displayName": "Stylebox",
 			"custom": {},
-			"parent": "ROOT",
+			"parent": "noS36RI4hl",
 			"hidden": false,
 			"nodes": [
 				"vBC2xbtp2K"
@@ -803,6 +805,355 @@
 				"ywGke8WgKD",
 				"8mfUmSuSlN"
 			],
+			"linkedNodes": {}
+		},
+		"k_jzuo7kUe": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Select a picture to size before downloading the product image",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"style": {
+					"fontSize": "20px",
+					"color": "#2E59BD",
+					"fontWeight": "400",
+					"width": "fit-content"
+				},
+				"iterableChild": true
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "HtFYLGUpXm",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"noS36RI4hl": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"classNames": [
+					"cartStyle"
+				],
+				"style": {
+					"width": "fit-content"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [
+				"HtFYLGUpXm",
+				"-kp1ccd7qh"
+			],
+			"linkedNodes": {}
+		},
+		"OSi_ljEP-y": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"display": "flex",
+					"flexDirection": "column",
+					"width": "25%",
+					"gap": "20px",
+					"alignItems": "center"
+				},
+				"classNames": [
+					"cartStyle"
+				]
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [
+				"n1uAzGPaiY",
+				"WyDUenYOrW"
+			],
+			"linkedNodes": {}
+		},
+		"n1uAzGPaiY": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "When clicking on the Download picture product link, the getThumbnail() function of the Products dataclass is called.",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": ""
+							}
+						]
+					},
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": "The product name and the picture size are passed as parameter."
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"style": {
+					"fontSize": "20px",
+					"color": "#777E90",
+					"fontWeight": "400",
+					"width": "auto"
+				},
+				"iterableChild": true
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "OSi_ljEP-y",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"j9ArXXaMu3": {
+			"type": {
+				"resolvedName": "Dialog"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"overlay": true,
+				"serverSideRef": "ScreenShot",
+				"closable": false
+			},
+			"displayName": "Dialog",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"Dialog": "u7nNfPbohB",
+				"close": "zV5rAeCi-B"
+			}
+		},
+		"u7nNfPbohB": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"className": "h-full",
+				"style": {
+					"width": "auto",
+					"height": "500px",
+					"display": "flex",
+					"flexDirection": "column",
+					"alignItems": "center",
+					"justifyContent": "center",
+					"gap": "20px"
+				},
+				"iterableChild": true
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "j9ArXXaMu3",
+			"hidden": false,
+			"nodes": [
+				"xmkx3CJ96t",
+				"JJRLKevgqY"
+			],
+			"linkedNodes": {}
+		},
+		"xmkx3CJ96t": {
+			"type": {
+				"resolvedName": "Image"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"style": {
+					"width": "fit-content",
+					"height": "auto"
+				},
+				"imgSrc": "/$shared/Qodly_getThumbnail_call.png"
+			},
+			"displayName": "Image",
+			"custom": {},
+			"parent": "u7nNfPbohB",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"kwhx7PsHs1": {
+			"type": {
+				"resolvedName": "Image"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"style": {
+					"width": 250,
+					"height": "auto"
+				},
+				"imgSrc": "/$shared/Qodly_getThumbnail_call.png"
+			},
+			"displayName": "Image",
+			"custom": {},
+			"parent": "WyDUenYOrW",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"zV5rAeCi-B": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-times"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "j9ArXXaMu3",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"WyDUenYOrW": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"display": "flex",
+					"gap": "20px",
+					"justifyContent": "center",
+					"alignItems": "center"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "OSi_ljEP-y",
+			"hidden": false,
+			"nodes": [
+				"OjoJSDYH8Z",
+				"kwhx7PsHs1"
+			],
+			"linkedNodes": {}
+		},
+		"OjoJSDYH8Z": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [
+					{
+						"type": "dialog",
+						"id": "fpCU4jMHBoU9bWHWXJr42p",
+						"events": [
+							"onclick"
+						],
+						"actionType": "open",
+						"targetDialog": "ScreenShot"
+					}
+				],
+				"icon": "fa-solid fa-magnifying-glass-plus",
+				"style": {
+					"color": "#777E90",
+					"fontSize": "40px"
+				}
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "WyDUenYOrW",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"JJRLKevgqY": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [
+					{
+						"type": "dialog",
+						"id": "9gV9VcdByCTif3WKuFtTeg",
+						"events": [
+							"onclick"
+						],
+						"actionType": "close",
+						"targetDialog": "ScreenShot"
+					}
+				],
+				"icon": "fa-solid fa-circle-xmark",
+				"style": {
+					"color": "#777E90",
+					"fontSize": "40px"
+				}
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "u7nNfPbohB",
+			"hidden": false,
+			"nodes": [],
 			"linkedNodes": {}
 		}
 	}
