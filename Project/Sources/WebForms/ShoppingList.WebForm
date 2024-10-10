@@ -1343,7 +1343,10 @@
 				"classNames": [],
 				"events": [],
 				"overlay": true,
-				"serverSideRef": "ScreenShot"
+				"serverSideRef": "ScreenShot",
+				"style": {
+					"borderRadius": "15px"
+				}
 			},
 			"displayName": "Dialog",
 			"custom": {},
@@ -1367,13 +1370,15 @@
 					"flexDirection": "column",
 					"gap": "20px",
 					"alignItems": "center"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
 			"parent": "guJalD5ftv",
 			"hidden": false,
 			"nodes": [
+				"WH3jvlDH6U",
 				"5er4aZS4QI",
 				"U2oRNkQvp3"
 			],
@@ -1483,6 +1488,42 @@
 			"displayName": "Icon",
 			"custom": {},
 			"parent": "qVHgkrhBJA",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"WH3jvlDH6U": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"fontSize": "18px",
+					"color": "#777E90",
+					"fontWeight": "700"
+				},
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Event calling the buildShoppingList() function",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": ""
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "OR5vUSKBA7",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}

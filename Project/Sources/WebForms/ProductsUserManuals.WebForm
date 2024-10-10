@@ -941,7 +941,10 @@
 				"classNames": [],
 				"events": [],
 				"overlay": true,
-				"serverSideRef": "ScreenShot"
+				"serverSideRef": "ScreenShot",
+				"style": {
+					"borderRadius": "15px"
+				}
 			},
 			"displayName": "Dialog",
 			"custom": {},
@@ -965,13 +968,15 @@
 					"flexDirection": "column",
 					"gap": "20px",
 					"alignItems": "center"
-				}
+				},
+				"iterableChild": true
 			},
 			"displayName": "Stylebox",
 			"custom": {},
 			"parent": "RS8-fUreti",
 			"hidden": false,
 			"nodes": [
+				"9p4AWLzTIM",
 				"nbCl0guiGl",
 				"YfILAH5dXi"
 			],
@@ -1079,6 +1084,42 @@
 				}
 			},
 			"displayName": "Icon",
+			"custom": {},
+			"parent": "3-Q3L_WJYF",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"9p4AWLzTIM": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"fontSize": "18px",
+					"color": "#777E90",
+					"fontWeight": "700"
+				},
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Event calling the getUserManual() function",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": ""
+			},
+			"displayName": "Text",
 			"custom": {},
 			"parent": "3-Q3L_WJYF",
 			"hidden": false,

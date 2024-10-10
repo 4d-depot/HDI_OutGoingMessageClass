@@ -969,7 +969,10 @@
 				"events": [],
 				"overlay": true,
 				"serverSideRef": "ScreenShot",
-				"closable": false
+				"closable": false,
+				"style": {
+					"borderRadius": "15px"
+				}
 			},
 			"displayName": "Dialog",
 			"custom": {},
@@ -1005,6 +1008,7 @@
 			"parent": "j9ArXXaMu3",
 			"hidden": false,
 			"nodes": [
+				"BTkZII2Z15",
 				"xmkx3CJ96t",
 				"JJRLKevgqY"
 			],
@@ -1081,7 +1085,8 @@
 					"display": "flex",
 					"gap": "20px",
 					"justifyContent": "center",
-					"alignItems": "center"
+					"alignItems": "center",
+					"paddingTop": "12px"
 				}
 			},
 			"displayName": "Stylebox",
@@ -1150,6 +1155,42 @@
 				}
 			},
 			"displayName": "Icon",
+			"custom": {},
+			"parent": "u7nNfPbohB",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"BTkZII2Z15": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"iterableChild": true,
+				"style": {
+					"fontSize": "18px",
+					"color": "#777E90",
+					"fontWeight": "700"
+				},
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Event calling the getThumbnail() function",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": ""
+			},
+			"displayName": "Text",
 			"custom": {},
 			"parent": "u7nNfPbohB",
 			"hidden": false,

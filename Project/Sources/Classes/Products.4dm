@@ -3,13 +3,11 @@ Class extends DataClass
 
 exposed onHTTPGet Function getThumbnail($name : Text; $width : Integer; $height : Integer) : 4D:C1709.OutgoingMessage
 	
-	var $file : 4D:C1709.File
+	var $file:=File:C1566("/RESOURCES/Images/"+$name+".jpg")
 	var $image; $thumbnail : Picture
 	var $blob : Blob
-	var $response : 4D:C1709.OutgoingMessage:=4D:C1709.OutgoingMessage.new()
+	var $response:=4D:C1709.OutgoingMessage.new()
 	
-	
-	$file:=File:C1566("/RESOURCES/Images/"+$name+".jpg")
 	
 	READ PICTURE FILE:C678($file.platformPath; $image)
 	
@@ -18,7 +16,6 @@ exposed onHTTPGet Function getThumbnail($name : Text; $width : Integer; $height 
 	PICTURE TO BLOB:C692($thumbnail; $blob; "image/jpeg")
 	
 	$response.setBody($blob)
-	
 	$response.setHeader("Content-Type"; "image/jpeg")
 	
 	return $response
@@ -26,10 +23,9 @@ exposed onHTTPGet Function getThumbnail($name : Text; $width : Integer; $height 
 	
 exposed onHTTPGet Function getUserManual($product : cs:C1710.ProductsEntity) : 4D:C1709.OutgoingMessage
 	
-	var $file : 4D:C1709.File
-	var $response : 4D:C1709.OutgoingMessage:=4D:C1709.OutgoingMessage.new()
+	var $file:=File:C1566("/RESOURCES/User manuals/"+$product.name+".pdf")
+	var $response:=4D:C1709.OutgoingMessage.new()
 	
-	$file:=File:C1566("/RESOURCES/User manuals/"+$product.name+".pdf")
 	$response.setBody($file.getContent())
 	$response.setHeader("Content-Type"; "application/pdf")
 	
@@ -37,25 +33,21 @@ exposed onHTTPGet Function getUserManual($product : cs:C1710.ProductsEntity) : 4
 	
 	
 	
-exposed onHTTPGet Function getUserManual_TO_DELETE($productId : Integer; $type : Text) : 4D:C1709.OutgoingMessage
-	
+exposed onHTTPGet Function getUserManual_TODELETE($productId : Integer; $type : Text) : 4D:C1709.OutgoingMessage
 	var $file : 4D:C1709.File
-	var $response : 4D:C1709.OutgoingMessage:=4D:C1709.OutgoingMessage.new()
-	var $doc : Text
-	
-	$doc:="/RESOURCES/User manuals/product_"+String:C10($productId)
+	var $response:=4D:C1709.OutgoingMessage.new()
+	var $doc:="/RESOURCES/User manuals/product_"+String:C10($productId)
 	
 	Case of 
 		: ($type="pdf")
 			$file:=File:C1566($doc+".pdf")
+			$response.setBody($file.getContent())  // This is binary content 
 			$response.setHeader("Content-Type"; "application/pdf")
 			
 		: ($type="jpeg")
 			$file:=File:C1566($doc+".jpeg")
+			$response.setBody($file.getContent())  // This is binary content
 			$response.setHeader("Content-Type"; "image/jpeg")
 	End case 
-	
-	$response.setBody($file.getContent())
-	
 	return $response
 	
