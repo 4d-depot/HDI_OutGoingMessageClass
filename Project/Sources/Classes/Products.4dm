@@ -29,21 +29,3 @@ exposed onHTTPGet Function getUserManual($product : cs:C1710.ProductsEntity) : 4
 	
 	
 	
-exposed onHTTPGet Function getUserManual_TODELETE($productId : Integer; $type : Text) : 4D:C1709.OutgoingMessage
-	var $file : 4D:C1709.File
-	var $response:=4D:C1709.OutgoingMessage.new()
-	var $doc:="/RESOURCES/User manuals/product_"+String:C10($productId)
-	
-	Case of 
-		: ($type="pdf")
-			$file:=File:C1566($doc+".pdf")
-			$response.setBody($file.getContent())  // This is binary content 
-			$response.setHeader("Content-Type"; "application/pdf")
-			
-		: ($type="jpeg")
-			$file:=File:C1566($doc+".jpeg")
-			$response.setBody($file.getContent())  // This is binary content
-			$response.setHeader("Content-Type"; "image/jpeg")
-	End case 
-	return $response
-	
