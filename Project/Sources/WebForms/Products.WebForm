@@ -819,7 +819,7 @@
 						"type": "paragraph",
 						"children": [
 							{
-								"text": "Select a picture to size before downloading the product image",
+								"text": "Select a picture and a size before downloading the product image",
 								"bold": false,
 								"italic": false,
 								"underlined": false,
@@ -938,7 +938,7 @@
 								"italic": false,
 								"underlined": false,
 								"strikethrough": false,
-								"text": "The product name and the picture size are passed as parameter."
+								"text": "The product name and the picture size are passed as parameters."
 							}
 						]
 					}

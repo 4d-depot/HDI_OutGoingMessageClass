@@ -890,7 +890,7 @@
 								"italic": false,
 								"underlined": false,
 								"strikethrough": false,
-								"text": "The product entity is passed as parameter."
+								"text": "The product entity is passed as a parameter."
 							}
 						]
 					}
