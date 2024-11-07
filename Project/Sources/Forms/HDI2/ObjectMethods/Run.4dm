@@ -1,5 +1,11 @@
 
 
+
+If (btnTrace)
+	TRACE:C157
+End if 
+
+
 getShoppingListURL
 
 OBJECT SET ENABLED:C1123(*; "Download"; True:C214)

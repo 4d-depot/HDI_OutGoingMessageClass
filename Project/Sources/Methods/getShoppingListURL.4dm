@@ -8,11 +8,6 @@ var $cookies : Collection
 var $cookie; $uri : Text
 
 
-If (btnTrace)
-	TRACE:C157
-End if 
-
-
 
 $headers:=buildHeaders
 $requestObj:={method: HTTP GET method:K71:1; headers: $headers}

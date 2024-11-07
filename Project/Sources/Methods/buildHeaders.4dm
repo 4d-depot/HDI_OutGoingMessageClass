@@ -4,10 +4,6 @@
 var $result : Object
 
 
-If (btnTrace)
-	TRACE:C157
-End if 
-
 $result:=New object:C1471()
 
 

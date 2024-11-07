@@ -2,6 +2,8 @@ Case of
 		
 	: (Form event code:C388=On Load:K2:1)
 		
+		btnTrace:=False:C215
+		
 		InitInfo
 		
 		// Page 1
@@ -30,10 +32,13 @@ Case of
 		
 		OBJECT SET ENABLED:C1123(*; "Download"; False:C215)
 		
+		manageTexts
 		
 	: (Form event code:C388=On Page Change:K2:54)
 		
 		OBJECT SET ENABLED:C1123(*; "Download"; False:C215)
+		
+		manageTexts
 		
 	: (Form event code:C388=On Close Box:K2:21)
 		If (Is Windows:C1573 && Application info:C1599().SDIMode)

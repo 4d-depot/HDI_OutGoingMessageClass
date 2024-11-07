@@ -39,6 +39,55 @@
 					"events": [
 						"onClick"
 					]
+				},
+				"Check Box": {
+					"type": "checkbox",
+					"text": "Trace",
+					"top": 940,
+					"left": 20,
+					"width": 110,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "btnTrace"
+				},
+				"Check Box1": {
+					"type": "checkbox",
+					"text": "Trace",
+					"top": 940,
+					"left": 20,
+					"width": 110,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "btnTrace"
+				},
+				"Check Box2": {
+					"type": "checkbox",
+					"text": "Trace",
+					"top": 940,
+					"left": 20,
+					"width": 110,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "btnTrace"
+				},
+				"Check Box3": {
+					"type": "checkbox",
+					"text": "Trace",
+					"top": 850,
+					"left": 900,
+					"width": 70,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "btnTrace",
+					"fontSize": 14
 				}
 			}
 		},
@@ -50,8 +99,8 @@
 					"left": 50,
 					"width": 900,
 					"height": 400,
-					"sizingX": "grow",
-					"sizingY": "grow",
+					"sizingX": "fixed",
+					"sizingY": "fixed",
 					"dataSource": "Infos[0].Description",
 					"focusable": false,
 					"fill": "transparent",
@@ -76,8 +125,8 @@
 					"left": 50,
 					"width": 900,
 					"height": 180,
-					"sizingX": "grow",
-					"sizingY": "grow",
+					"sizingX": "fixed",
+					"sizingY": "fixed",
 					"dataSource": "Infos[1].Description",
 					"focusable": false,
 					"fill": "transparent",
@@ -110,6 +159,8 @@
 					"scrollbarHorizontal": "hidden",
 					"currentItemSource": "Form:C1466.product",
 					"method": "ObjectMethods/Products.4dm",
+					"sizingX": "fixed",
+					"sizingY": "fixed",
 					"columns": [
 						{
 							"header": {
@@ -139,7 +190,9 @@
 					"focusable": false,
 					"fill": "transparent",
 					"borderStyle": "none",
-					"fontSize": 16
+					"fontSize": 16,
+					"sizingX": "fixed",
+					"sizingY": "fixed"
 				},
 				"Text": {
 					"type": "text",
@@ -147,7 +200,9 @@
 					"top": 610,
 					"left": 180,
 					"width": 180,
-					"height": 20
+					"height": 20,
+					"sizingX": "fixed",
+					"sizingY": "fixed"
 				},
 				"Text1": {
 					"type": "text",
@@ -155,7 +210,9 @@
 					"top": 640,
 					"left": 180,
 					"width": 180,
-					"height": 20
+					"height": 20,
+					"sizingX": "fixed",
+					"sizingY": "fixed"
 				},
 				"Radio Button": {
 					"type": "radio",
@@ -169,7 +226,9 @@
 					],
 					"radioGroup": "Choices",
 					"dataSource": "Form:C1466.small",
-					"method": "ObjectMethods/Radio Button.4dm"
+					"method": "ObjectMethods/Radio Button.4dm",
+					"sizingX": "fixed",
+					"sizingY": "fixed"
 				},
 				"Radio Button1": {
 					"type": "radio",
@@ -183,7 +242,9 @@
 					],
 					"radioGroup": "Choices",
 					"dataSource": "Form:C1466.large",
-					"method": "ObjectMethods/Radio Button1.4dm"
+					"method": "ObjectMethods/Radio Button1.4dm",
+					"sizingX": "fixed",
+					"sizingY": "fixed"
 				},
 				"Text7": {
 					"type": "text",
@@ -194,7 +255,9 @@
 					"height": 20,
 					"fontSize": 18,
 					"fontWeight": "bold",
-					"stroke": "#6495ed"
+					"stroke": "#6495ed",
+					"sizingX": "fixed",
+					"sizingY": "fixed"
 				},
 				"Text8": {
 					"type": "text",
@@ -204,7 +267,9 @@
 					"width": 200,
 					"height": 20,
 					"textAlign": "right",
-					"right": 140
+					"right": 140,
+					"sizingX": "fixed",
+					"sizingY": "fixed"
 				},
 				"Button": {
 					"type": "button",
@@ -217,7 +282,9 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "fixed",
+					"sizingY": "fixed"
 				},
 				"Text9": {
 					"type": "text",
@@ -229,7 +296,9 @@
 					"textAlign": "right",
 					"fontWeight": "bold",
 					"fontSize": 16,
-					"stroke": "#6495ed"
+					"stroke": "#6495ed",
+					"sizingX": "fixed",
+					"sizingY": "fixed"
 				},
 				"Input10": {
 					"type": "input",
@@ -241,8 +310,10 @@
 					"focusable": false,
 					"fill": "transparent",
 					"borderStyle": "dotted",
-					"dataSource": "LinesCode[0].Description",
-					"styledText": true
+					"dataSource": "LinesCode{1}",
+					"styledText": true,
+					"sizingX": "fixed",
+					"sizingY": "fixed"
 				},
 				"Text10": {
 					"type": "text",
@@ -253,7 +324,9 @@
 					"height": 20,
 					"fontSize": 18,
 					"fontWeight": "bold",
-					"stroke": "#6495ed"
+					"stroke": "#6495ed",
+					"sizingX": "fixed",
+					"sizingY": "fixed"
 				},
 				"Text11": {
 					"type": "text",
@@ -264,7 +337,9 @@
 					"height": 20,
 					"fontSize": 18,
 					"fontWeight": "bold",
-					"stroke": "#6495ed"
+					"stroke": "#6495ed",
+					"sizingX": "fixed",
+					"sizingY": "fixed"
 				}
 			}
 		},
@@ -276,8 +351,8 @@
 					"left": 50,
 					"width": 900,
 					"height": 180,
-					"sizingX": "grow",
-					"sizingY": "grow",
+					"sizingX": "fixed",
+					"sizingY": "fixed",
 					"dataSource": "Infos[2].Description",
 					"focusable": false,
 					"fill": "transparent",
@@ -310,6 +385,8 @@
 					"scrollbarHorizontal": "hidden",
 					"currentItemSource": "Form:C1466.product2",
 					"method": "ObjectMethods/Products2.4dm",
+					"sizingX": "fixed",
+					"sizingY": "fixed",
 					"columns": [
 						{
 							"header": {
@@ -352,7 +429,9 @@
 					"focusable": false,
 					"fill": "transparent",
 					"borderStyle": "none",
-					"fontSize": 16
+					"fontSize": 16,
+					"sizingX": "fixed",
+					"sizingY": "fixed"
 				},
 				"Button1": {
 					"type": "button",
@@ -365,7 +444,9 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Button1.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "fixed",
+					"sizingY": "fixed"
 				},
 				"Text17": {
 					"type": "text",
@@ -377,7 +458,9 @@
 					"textAlign": "left",
 					"fontWeight": "bold",
 					"fontSize": 16,
-					"stroke": "#6495ed"
+					"stroke": "#6495ed",
+					"sizingX": "fixed",
+					"sizingY": "fixed"
 				},
 				"Input11": {
 					"type": "input",
@@ -389,8 +472,10 @@
 					"focusable": false,
 					"fill": "transparent",
 					"borderStyle": "dotted",
-					"dataSource": "LinesCode[1].Description",
-					"styledText": true
+					"dataSource": "LinesCode{2}",
+					"styledText": true,
+					"sizingX": "fixed",
+					"sizingY": "fixed"
 				},
 				"Text2": {
 					"type": "text",
@@ -401,7 +486,9 @@
 					"height": 20,
 					"fontSize": 18,
 					"fontWeight": "bold",
-					"stroke": "#6495ed"
+					"stroke": "#6495ed",
+					"sizingX": "fixed",
+					"sizingY": "fixed"
 				},
 				"Text6": {
 					"type": "text",
@@ -412,7 +499,9 @@
 					"height": 20,
 					"fontSize": 18,
 					"fontWeight": "bold",
-					"stroke": "#6495ed"
+					"stroke": "#6495ed",
+					"sizingX": "fixed",
+					"sizingY": "fixed"
 				}
 			}
 		},
@@ -424,8 +513,8 @@
 					"left": 50,
 					"width": 900,
 					"height": 110,
-					"sizingX": "grow",
-					"sizingY": "grow",
+					"sizingX": "fixed",
+					"sizingY": "fixed",
 					"dataSource": "Infos[3].Description",
 					"focusable": false,
 					"fill": "transparent",
@@ -451,7 +540,9 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Download.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "fixed",
+					"sizingY": "fixed"
 				},
 				"Text18": {
 					"type": "text",
@@ -463,7 +554,9 @@
 					"textAlign": "right",
 					"fontWeight": "bold",
 					"fontSize": 16,
-					"stroke": "#6495ed"
+					"stroke": "#6495ed",
+					"sizingX": "fixed",
+					"sizingY": "fixed"
 				},
 				"RunRESTRequest": {
 					"type": "input",
@@ -475,7 +568,9 @@
 					"focusable": false,
 					"dataSource": "Form:C1466.getEntitySet",
 					"borderStyle": "none",
-					"fill": "automatic"
+					"fill": "automatic",
+					"sizingX": "fixed",
+					"sizingY": "fixed"
 				},
 				"Input8": {
 					"type": "input",
@@ -486,7 +581,9 @@
 					"enterable": false,
 					"focusable": false,
 					"dataSource": "Form:C1466.response",
-					"scrollbarVertical": "visible"
+					"scrollbarVertical": "visible",
+					"sizingX": "fixed",
+					"sizingY": "fixed"
 				},
 				"EntitySet": {
 					"type": "input",
@@ -497,7 +594,9 @@
 					"enterable": false,
 					"focusable": false,
 					"dataSource": "Form:C1466.entitySet",
-					"visibility": "visible"
+					"visibility": "visible",
+					"sizingX": "fixed",
+					"sizingY": "fixed"
 				},
 				"EntitySetLabel": {
 					"type": "text",
@@ -506,7 +605,9 @@
 					"left": 610,
 					"width": 70,
 					"height": 20,
-					"fontWeight": "bold"
+					"fontWeight": "bold",
+					"sizingX": "fixed",
+					"sizingY": "fixed"
 				},
 				"Input9": {
 					"type": "input",
@@ -522,7 +623,9 @@
 					"focusable": false,
 					"fill": "transparent",
 					"borderStyle": "none",
-					"fontSize": 14
+					"fontSize": 14,
+					"sizingX": "fixed",
+					"sizingY": "fixed"
 				},
 				"Input12": {
 					"type": "input",
@@ -534,8 +637,10 @@
 					"focusable": false,
 					"fill": "transparent",
 					"borderStyle": "dotted",
-					"dataSource": "LinesCode[2].Description",
-					"styledText": true
+					"dataSource": "LinesCode{3}",
+					"styledText": true,
+					"sizingX": "fixed",
+					"sizingY": "fixed"
 				},
 				"Run": {
 					"type": "button",
@@ -548,7 +653,9 @@
 						"onClick"
 					],
 					"method": "ObjectMethods/Run.4dm",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "fixed",
+					"sizingY": "fixed"
 				},
 				"ProductsLB": {
 					"type": "listbox",
@@ -567,6 +674,8 @@
 					"focusable": false,
 					"scrollbarHorizontal": "hidden",
 					"currentItemSource": "",
+					"sizingX": "fixed",
+					"sizingY": "fixed",
 					"columns": [
 						{
 							"header": {
@@ -617,7 +726,9 @@
 					"height": 20,
 					"fontSize": 18,
 					"fontWeight": "bold",
-					"stroke": "#6495ed"
+					"stroke": "#6495ed",
+					"sizingX": "fixed",
+					"sizingY": "fixed"
 				},
 				"Text4": {
 					"type": "text",
@@ -628,7 +739,9 @@
 					"height": 20,
 					"fontSize": 18,
 					"fontWeight": "bold",
-					"stroke": "#6495ed"
+					"stroke": "#6495ed",
+					"sizingX": "fixed",
+					"sizingY": "fixed"
 				},
 				"Text5": {
 					"type": "text",
@@ -639,7 +752,9 @@
 					"height": 20,
 					"fontSize": 18,
 					"fontWeight": "bold",
-					"stroke": "#6495ed"
+					"stroke": "#6495ed",
+					"sizingX": "fixed",
+					"sizingY": "fixed"
 				},
 				"Text12": {
 					"type": "text",
@@ -650,7 +765,9 @@
 					"height": 20,
 					"fontSize": 18,
 					"fontWeight": "bold",
-					"stroke": "#6495ed"
+					"stroke": "#6495ed",
+					"sizingX": "fixed",
+					"sizingY": "fixed"
 				}
 			},
 			"entryOrder": [
@@ -693,5 +810,5 @@
 			"View 1": {}
 		}
 	},
-	"geometryStamp": 2533
+	"geometryStamp": 2733
 }
